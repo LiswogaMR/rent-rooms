@@ -1,0 +1,133 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin-top: 40px; /* Adjust margin to accommodate fixed header */
+}
+
+header {
+    text-align: center;
+    background-color: #fff;
+    padding: 5px 0; /* Reduced padding to make header smaller vertically */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%; /* Adjusted to a percentage for responsiveness */
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.back-button, .home-button {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 6px 10px; /* Adjusted padding for smaller buttons */
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+    .back-button:hover, .home-button:hover {
+        background-color: #f0f0f0;
+    }
+
+.img {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto;
+    width: auto; /* Ensures image resizes responsively */
+    height: auto; /* Ensures image resizes responsively */
+    max-height: 40px; /* Limit maximum height for smaller screens */
+}
+
+.form-container {
+    max-width: 90%; /* Adjusted to a percentage for responsiveness */
+    margin: 40px auto; /* Adjusted top margin for spacing */
+    background-color: #fff;
+    padding: 15px; /* Reduced padding for smaller form container */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px; /* Adjusted margin for smaller headings */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="date"],
+textarea,
+button {
+    display: block;
+    width: calc(100% - 24px); /* Adjusted for better spacing */
+    padding: 10px; /* Reduced padding for smaller inputs and buttons */
+    margin: 10px auto; /* Adjusted margin for smaller inputs and buttons */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Reduced font size for smaller screens */
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px auto 5px auto;
+    font-size: 14px;
+    color: #333;
+}
+
+textarea {
+    resize: vertical; /* Allows vertical resize only */
+}
+
+p {
+    margin-top: 15px; /* Adjusted margin for smaller paragraphs */
+}
+
+    p a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .header-content {
+        flex-direction: column;
+    }
+
+    .back-button, .home-button {
+        margin-top: 8px; /* Further reduced margin for smaller screens */
+        padding: 4px 8px; /* Further reduced padding for smaller buttons */
+    }
+
+    .form-container {
+        margin: 20px auto;
+        padding: 10px; /* Further reduced padding for smaller screens */
+    }
+}

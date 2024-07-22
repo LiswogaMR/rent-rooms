@@ -1,0 +1,87 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+    header img {
+        max-width: 100px;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    header h1 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    header .btn {
+        display: inline-block;
+        margin: 10px 20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+        header .btn:hover {
+            background-color: #45a049;
+        }
+
+#RentRoom {
+    background-color: #4CAF50;
+}
+
+#postRoom {
+    background-color: #007bff;
+}
+
+#RentRoom:hover {
+    background-color: #45a049;
+}
+
+#postRoom:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+        header img {
+            max-width: 80px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        header .btn {
+            margin: 5px 10px;
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+}
